@@ -1,3 +1,6 @@
 .char_title {
-    color: white;
+    color: green;
+}
+.char_wrapper {
+    background-color: white;
 }
