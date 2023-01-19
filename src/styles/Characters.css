@@ -4,3 +4,7 @@
 .char_wrapper {
     background-color: white;
 }
+.char_box {
+    width: 100%;
+    background-color: gray;
+}

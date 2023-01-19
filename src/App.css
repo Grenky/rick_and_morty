@@ -2,10 +2,12 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
+
 }
 .wrapper {
   width: 100%;
   height: 100%;
+  background: url(/public/images/Rick_and_Morty_title_card.png) center;
 }
 
 
