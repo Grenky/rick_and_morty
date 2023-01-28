@@ -16,8 +16,9 @@ function Character({characterId}) {
   }, []);
 
     return(
+      
         <div className="char_wrapper">
-            <h1 className="char_title">all characters</h1>
+            
             <div className="chara_box"> 
               <p>{character.name}</p>
               <img src={character.image} alt={character.name} />

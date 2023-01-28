@@ -5,7 +5,8 @@ import Character from "./Character";
 function Characters() {
   
       return(
-          <div className="char_wrapper">
+          <div className="char_main_wrapper">
+            {/* <h1 className="char_title">all characters</h1> */}
             <Character characterId={271}/>
             <Character characterId={192}/>
             <Character characterId={594}/>
