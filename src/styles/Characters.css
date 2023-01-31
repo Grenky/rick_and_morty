@@ -4,16 +4,33 @@
 .char_wrapper {
     background-color: white;
     width: 50%;
-    height: 50%;
+    height: 60%;
 }
-.char_box {
-    width: 100px;
-    background-color: gray;
-    height: 100px;
+.chara_box {
+    width: 100%;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
 }
 .char_main_wrapper {
     margin-top: 50px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.link_btn {
+    width: 200px;
+    height: 50px;
+    background-color: #8EE56C;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.link_btn:hover {
+    background-color: #C8F367;
+    transition: 0.3s;
 }
