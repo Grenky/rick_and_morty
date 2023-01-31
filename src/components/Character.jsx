@@ -2,7 +2,7 @@ import React  from "react";
 import '../styles/Characters.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from "react-router-dom";
+
 
 
 function Character({characterId}) {
@@ -24,7 +24,7 @@ function Character({characterId}) {
               <img src={character.image} alt={character.name} />
 
               <button className="link_btn">
-                <Link className='vagina-link' to='Vagina'>details</Link>                      
+                                    
               </button>           
             </div>
         </div>
