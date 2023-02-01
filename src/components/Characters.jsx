@@ -18,7 +18,7 @@ function Characters() {
   
       return(
           <div className="char_main_wrapper">
-              <p>{console.log(typeof(characters[0]))}</p>
+              <p>{characters.map(characters => <p>{characters.id}</p>)}</p>
             </div>
       )
   }
