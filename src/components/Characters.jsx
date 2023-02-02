@@ -16,9 +16,17 @@ function Characters() {
         setCharacters(response.data.results)});
   }, []);
   
+  // function keyreg(min, max, n) {
+  //  let res = new Set();
+  //  while(res.size < n) res.add(Math.floor(Math.random()* (max - min + 1)) + min);
+  //   return res;
+  // }  
+  // console.log(keyreg(0, 20, 5));
+
       return(
           <div className="char_main_wrapper">
-              <p>{characters.map(characters => <p>{characters.id}</p>)}</p>
+              {characters.map(characters => <img src={characters.image} alt={characters.name}></img>)}
+
             </div>
       )
   }
