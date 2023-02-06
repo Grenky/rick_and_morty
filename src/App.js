@@ -7,7 +7,6 @@ import Home from './components/Home';
 
 
 
-
 function App() {
 
 
@@ -19,7 +18,6 @@ function App() {
             <Route path="characters" element={<Characters  />} />
             <Route path="something" element={<Something />} />
             <Route path="about" element={<About />} />
-
         </Routes>    
      </div>    
   );

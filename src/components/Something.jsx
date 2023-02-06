@@ -7,7 +7,7 @@ import '../styles/Something.css';
 function Something() {
     
     const [test, setTest] = useState({});
-    const [test2, setTest2] = useState([]);
+    const [test2, setTest2] = useState({});
     const url = "https://rickandmortyapi.com/api/character/364";
     const url2 = "https://rickandmortyapi.com/api/character/684";
 
