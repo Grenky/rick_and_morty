@@ -9,6 +9,11 @@ import Home from './components/Home';
 
 function App() {
 
+  function adata() {
+    return(
+      new Date().toLocaleDateString()
+    )
+  }
 
   return (
     
@@ -17,8 +22,8 @@ function App() {
         <Routes>
             <Route path="characters" element={<Characters  />} />
             <Route path="something" element={<Something />} />
-            <Route path="about" element={<About />} />
-        </Routes>    
+            <Route path="about" element={<About adata={adata}/>} />
+        </Routes>   
      </div>    
   );
 }
