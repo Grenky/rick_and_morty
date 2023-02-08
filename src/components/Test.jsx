@@ -4,24 +4,31 @@ import React from "react";
 export default class Test extends  React.Component {
     constructor(props) {
         super(props);
-        this.state = {isToggleon: true};
+        this.state = {isToggleOn: true};
 
-        this.handlerClick = this.handlerClick.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    handlerClick() {
+    handleClick() {
         this.setState(prevState => ({
-            isToggleon: !prevState.isToggleon
+            isToggleon: !prevState.isToggleOn
         }));
     }
+
+   
+
     render() { 
         return(
             <div className="test_wrapper">
-                <button onClick={this.nandlerClick}>
-                    {this.state.isToggleon ? "on" : "off"}
+                <button onClick={this.nandleClick}>
+                    {this.state.isToggleOn ? console.log("on") : console.log("off")}
+                    click
                 </button>
-                <p>shit</p>
+              
             </div>
         )
     }
 }
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<Toggle />);

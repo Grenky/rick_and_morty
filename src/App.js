@@ -4,7 +4,9 @@ import About from './components/About';
 import Characters from './components/Characters';
 import Something from './components/Something';
 import Home from './components/Home';
-
+import RenderTest from './components/RenderTest';
+import Yes from './components/Yes';
+import No from './components/No';
 
 
 function App() {
@@ -23,6 +25,9 @@ function App() {
             <Route path="characters" element={<Characters  />} />
             <Route path="something" element={<Something />} />
             <Route path="about" element={<About adata={adata}/>} />
+            <Route path="RenderTest" element={<RenderTest />} />
+            <Route path="Yes" element={<Yes />} />
+            <Route path="No" element={<No />} />
         </Routes>   
      </div>    
   );
