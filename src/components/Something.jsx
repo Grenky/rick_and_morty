@@ -27,6 +27,9 @@ function Something() {
             setTest2(response.data)});
     }, []);
 
+    const array = [1, 2, 3, 4];
+
+
     return(
         <div className="some_wrapper">   
            <div>
@@ -46,7 +49,7 @@ function Something() {
                 <p className="info2">type: {test2.type}</p>
                 <p className="info2">gender: {test2.gender}</p>   
             </div>
-           
+            {array.map(arrayItem  => <li key={arrayItem}>{arrayItem}</li>)}
         </div>
     )
 }
