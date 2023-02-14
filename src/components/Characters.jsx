@@ -16,7 +16,6 @@ function Characters() {
         setCharacters(response.data.results)});
   }, []);
   
-   let something;
 
       return(
           <div className="char_main_wrapper">

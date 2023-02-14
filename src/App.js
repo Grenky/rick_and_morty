@@ -7,7 +7,7 @@ import Home from './components/Home';
 import RenderTest from './components/RenderTest';
 import Yes from './components/Yes';
 import No from './components/No';
-
+import Ccomponent from './components/Ccomponent';
 
 function App() {
 
@@ -28,6 +28,7 @@ function App() {
             <Route path="RenderTest" element={<RenderTest />} />
             <Route path="Yes" element={<Yes />} />
             <Route path="No" element={<No />} />
+            <Route path="Ccomponent" element={<Ccomponent />} />
         </Routes>   
      </div>    
   );

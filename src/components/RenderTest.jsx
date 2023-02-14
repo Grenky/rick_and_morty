@@ -4,10 +4,10 @@ import No from "./No";
 
 function RenderTest() {
     
-    const ask = +prompt('who are you')
+    const ask = prompt('who are you')
 
     function Registration() {
-        if(ask = true) {
+        if(ask === true) {
             alert('welcome')
         } else {
             alert('huh?')
