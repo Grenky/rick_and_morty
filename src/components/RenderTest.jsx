@@ -4,23 +4,14 @@ import No from "./No";
 
 function RenderTest() {
     
-    const ask = prompt('who are you')
+   let value = Math.random() > Math.random();
 
-    function Registration() {
-        if(ask === true) {
-            alert('welcome')
+   
+        if(value) {
+            return <Yes />
         } else {
-            alert('huh?')
+            return <No />
         }  
-    }
-
-    if(Registration) {
-        return <Yes />
-    }
-    return <No />
-
-
- 
 }
 
 export default RenderTest;
