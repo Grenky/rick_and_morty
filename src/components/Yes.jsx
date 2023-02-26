@@ -5,8 +5,8 @@ function Yes() {
 
     const [show, setShow] = useState(true); 
 
-    const showMessage = (e) => {
-        setShow(!setShow)
+    const showMessage = () => {
+        setShow(!show)
     };
 ///???
     let content = null;

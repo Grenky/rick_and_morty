@@ -6,12 +6,14 @@ function RenderTest() {
     
    let value = Math.random() > Math.random();
 
+
    
         if(value) {
             return <Yes />
         } else {
             return <No />
         }  
+        
 }
 
 export default RenderTest;
