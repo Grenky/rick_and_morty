@@ -16,11 +16,7 @@ function About(props) {
         alert('skot')
     }
 
- 
-
-
-  
-
+   
     
 
     return(
@@ -31,12 +27,13 @@ function About(props) {
               <button onClick={click}>ska</button>
               <button onClick={() => setCount(prev => prev + 1)}>incremen</button>
               <button onClick={() => setCount(prev => prev - 1)}>decremen</button>
-              <button onClick={() => setCount(prev => prev = 0)}>reset</button>
+              <button onClick={() => setCount(prev => prev === 0)}>reset</button>
               <p>count{count}</p>
             <Test />
              <input value={value} onChange={(e) => setValue(e.target.value)}></input>
              <label >box Test</label>
              <input type="checkbox"  onChange={() => setCheck(!check)}></input>
+             <p>{props.age}</p>
         </div>
     )
 }

@@ -17,12 +17,14 @@ function App() {
     )
   }
 
+
+
   return (
     
     <div className="App"> 
       <Home />
         <Routes>
-            <Route path="characters" element={<Characters  />} />
+            <Route path="characters" element={<Characters  name={'Gena'}/>} />
             <Route path="something" element={<Something />} />
             <Route path="about" element={<About adata={adata}/>} />
             <Route path="RenderTest" element={<RenderTest />} />
