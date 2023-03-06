@@ -3,7 +3,7 @@ import  { TitleContext } from "./Character";
 
 export default function Chield() {
 
-    const { example } = React.useContext(TitleContext);
+    const  example  = React.useContext(TitleContext);
 
   
 
