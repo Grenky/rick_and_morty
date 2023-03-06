@@ -1,20 +1,25 @@
 import '../styles/Characters.css';
-import React, { useContext } from "react";
+import React from "react";
 import Chield3 from './Chield3';
 
-// const TitleContext = React.createContext();
+export const TitleContext = React.createContext();
 
 function Character(props) {
 
+   
+
+    function example() {
+        console.log("clown");
+    }
+ 
 
     return(
         <div className="char_wrapper">
             <div className="chara_box"> 
                    <p>{props.name}</p>
-                   {/* <TitleContext value = "hi!">
+                   <TitleContext.Provider value ={example}>
                     <Chield3 />
-                   </TitleContext> */}
-                   <Chield3 />
+                   </TitleContext.Provider>
             </div>
         </div>
     )
