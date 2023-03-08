@@ -1,11 +1,15 @@
+
 import React, { useState } from "react";
 import Test from "./Test";
+
+
 
 function About(props) {
  
     const  [count, setCount] = useState(0);
     const  [value, setValue] = useState('something');
     const  [check, setCheck] = useState(false);
+  
 
    function simpleClick(e) {
         console.log(e)
@@ -16,8 +20,8 @@ function About(props) {
         alert('skot')
     }
 
-   
-    
+
+  
 
     return(
         <div className="about_wrapper">
@@ -33,7 +37,7 @@ function About(props) {
              <input value={value} onChange={(e) => setValue(e.target.value)}></input>
              <label >box Test</label>
              <input type="checkbox"  onChange={() => setCheck(!check)}></input>
-             <p>{props.age}</p>
+              
         </div>
     )
 }
