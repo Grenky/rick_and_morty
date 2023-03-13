@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import '../styles/Characters.css';
 import Character from "./Character";
 import { useEffect, useState } from 'react';
@@ -9,6 +9,8 @@ function Characters(props) {
   const [characters, setCharacters] = useState([]);
   const url = "https://rickandmortyapi.com/api/character/";
 
+
+
   useEffect(() => {
     axios
       .get(url)
@@ -16,6 +18,10 @@ function Characters(props) {
         setCharacters(response.data.results)});
   }, []);
   
+
+
+
+
 
       return(
           <div className="char_main_wrapper">

@@ -10,7 +10,7 @@ function Home() {
         <div className='home'>
             <Nav />
             <ErrorBoundary>
-            <Error /> 
+                <Error /> 
             </ErrorBoundary>
         </div>
     )

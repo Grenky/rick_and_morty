@@ -1,6 +1,6 @@
-
 import React, { useState } from "react";
-import Test from "./Test";
+import { useRef } from "react";
+import TestFramgent from "./TestFragment";
 
 
 
@@ -20,6 +20,14 @@ function About(props) {
         alert('skot')
     }
 
+    let testo = useRef(0);
+  
+
+    function useTesto() {
+       return console.log(testo = useRef( 1 + 1 ));
+    }
+
+    useTesto(useState());
 
   
 
@@ -33,11 +41,11 @@ function About(props) {
               <button onClick={() => setCount(prev => prev - 1)}>decremen</button>
               <button onClick={() => setCount(prev => prev === 0)}>reset</button>
               <p>count{count}</p>
-            <Test />
+       
              <input value={value} onChange={(e) => setValue(e.target.value)}></input>
              <label >box Test</label>
              <input type="checkbox"  onChange={() => setCheck(!check)}></input>
-              
+            <TestFramgent />    
         </div>
     )
 }
