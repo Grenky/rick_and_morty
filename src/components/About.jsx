@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useRef } from "react";
-import TestFramgent from "./TestFragment";
+import TestFragment from "./TestFragment";
 
 
 
@@ -45,7 +45,7 @@ function About(props) {
              <input value={value} onChange={(e) => setValue(e.target.value)}></input>
              <label >box Test</label>
              <input type="checkbox"  onChange={() => setCheck(!check)}></input>
-            <TestFramgent />    
+            <TestFragment />    
         </div>
     )
 }

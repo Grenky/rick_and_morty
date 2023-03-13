@@ -4,8 +4,8 @@ import React, { Fragment } from "react";
 
 function TestFragment  () {
     <div className="fragment_wrapper">
-      
         <Columns />
+        asdasd
     </div>
 }
 
