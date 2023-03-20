@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRef } from "react";
 import TestFrag from "./TestFrag";
-
+import StyleButton from "./TestHOC";
 
 
 function About(props) {
@@ -48,6 +48,7 @@ function About(props) {
              <label >box Test</label>
              <input type="checkbox"  onChange={() => setCheck(!check)}></input>
             <TestFrag />
+            <StyleButton />
         </div>
     )
 }
