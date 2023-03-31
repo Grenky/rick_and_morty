@@ -4,7 +4,7 @@ import axios from "axios";
 import '../styles/Something.css';
 
 
-function Something() {
+function Something(props) {
     
     const [test, setTest] = useState({});
     const [test2, setTest2] = useState({});

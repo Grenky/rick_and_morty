@@ -1,10 +1,10 @@
 import React from "react";
 
 
-export default function TestHOC2() {
+ function TestHOC2(click, btn) {
     return(
-        <div>
-            <button></button>
-        </div>
+     <div>
+        
+     </div>
     )
 }

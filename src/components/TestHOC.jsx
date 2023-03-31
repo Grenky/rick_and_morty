@@ -13,8 +13,8 @@ const Button = ({onclick, style}) => (
     <button onClick={onclick} style={style}>Click!</button>
 );
 
-const StyleButton = whiteStyle(Button, {backgroundColor : 'green', color : 'white'});
+const StyledButton = whiteStyle(Button, {backgroundColor : 'green', color : 'white'});
 
 export default function About() {
-    return <StyleButton onClick={() => console.log('Clicked!!!')} />;
+    return <StyledButton onClick={() => console.log('Clicked!!!')} />;
 };
