@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import TestFrag from "./TestFrag";
 import StyleButton from "./TestHOC";
+import '../styles/About.css';
 
 
 function About(props) {
@@ -30,8 +31,9 @@ function About(props) {
     useTesto(useState());
 
 
-  
-  
+   const reduxTest = () => {
+    console.log('hi!');
+   }
 
     return(
         <div className="about_wrapper">
@@ -49,6 +51,7 @@ function About(props) {
              <input type="checkbox"  onChange={() => setCheck(!check)}></input>
             <TestFrag />
             <StyleButton />
+            <button className="redtest" onClick={reduxTest}></button>
         </div>
     )
 }
