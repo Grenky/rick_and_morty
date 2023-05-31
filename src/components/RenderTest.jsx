@@ -4,16 +4,7 @@
 
 function RenderTest() {
     
-//    let value = Math.random() > Math.random();
-
-
-   
-//         if(value) {
-//             return <Yes />
-//         } else {
-//             return <No />
-//         }  
-        
+ <div></div>
 }
 
 export default RenderTest;

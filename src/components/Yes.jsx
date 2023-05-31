@@ -8,7 +8,7 @@ function Yes() {
     const showMessage = () => {
         setShow(!show)
     };
-///???
+
     let content = null;
 
     if(show) {

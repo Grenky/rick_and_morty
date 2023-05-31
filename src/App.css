@@ -9,6 +9,16 @@
   height: 100%;
   background: url(/public/images/Rick_and_Morty_title_card.png) center;
 }
+.redux-test {
+  font-size: 50px;
+}
+.redux-btn, .redux-btn2 {
+  width: 50px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 12px;
+  border: none;
+}
 
 
 

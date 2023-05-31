@@ -8,6 +8,7 @@ import RenderTest from './components/RenderTest';
 import Yes from './components/Yes';
 import No from './components/No';
 import Ccomponent from './components/Ccomponent';
+import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
 
@@ -15,6 +16,19 @@ function App() {
     return(
       new Date().toLocaleDateString()
     )
+  }
+
+
+  const dispatch = useDispatch()
+  const cash = useSelector( state => state.cash)
+  
+
+  const addCash = () => {
+    dispatch({type: "ADD_CASH", payload: cash})
+  }
+
+  const getCash = () => {
+    dispatch({type: "GET_CASH", payload: cash})
   }
 
 
@@ -31,7 +45,10 @@ function App() {
             <Route path="Yes" element={<Yes />} />
             <Route path="No" element={<No />} />
             <Route path="Ccomponent" element={<Ccomponent />} />
-        </Routes>   
+        </Routes> 
+        <div className='redux-test'>{cash}</div>
+        <button className='redux-btn' onClick={() => addCash(Number(prompt()))}>click</button>
+        <button className='redux-btn2' onClick={() => getCash(Number(prompt()))}>click</button>
      </div>    
   );
 }
